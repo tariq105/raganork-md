@@ -1,4 +1,4 @@
-const fs = require('fs');
+NJ http const fs = require('fs');
 const { Sequelize } = require('sequelize');
 const isVPS = !(__dirname.startsWith("/rgnk") || __dirname.startsWith("/skl"));
 const isHeroku = __dirname.startsWith("/skl");
@@ -57,7 +57,7 @@ module.exports = {
     ALLOWED: process.env.ALLOWED || '91,94,2',
     NOT_ALLOWED: process.env.ALLOWED || '91,94,212',
     CHATBOT: process.env.CHATBOT || 'off',
-    HANDLERS: process.env.HANDLERS || '.,',
+    HANDLERS: process.env.HANDLERS || '.',
     STICKER_DATA: process.env.STICKER_DATA || "Raganork",
     BOT_NAME: process.env.BOT_NAME || 'Raganork',
     AUDIO_DATA: process.env.AUDIO_DATA === undefined || process.env.AUDIO_DATA === "private" ? 'ꪶ͢٭𝑺𝜣𝑼𝑹𝛢𝑽𝑲𝑳¹¹ꫂ;Raganork MD bot;https://i.imgur.com/P7ziVhr.jpeg' : process.env.AUDIO_DATA,
